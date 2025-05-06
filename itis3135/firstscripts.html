@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerson Hicks | ITIS 3135 | Epic Elephant | Emerson Enterprises</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Montserrat:ital@1&family=Prompt:wght@300&family=Source+Sans+Pro:wght@600&display=swap"
+        rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+
+</head>
+
+
+<body>
+    <header>
+        <section class="bluegray">
+
+            <nav class="emerson">
+                <ul>
+                    Emerson Hicks
+                </ul>
+            </nav>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">Directory</a></li>
+                    <li><a href="./index.html">ITIS 3135</a></li>
+                </ul>
+            </nav>
+
+            <div class="hero-header">
+                <iconify-icon icon="material-symbols:business-center-outline"></iconify-icon>
+                <h1>Emerson Enterprises</h1>
+                <h2>The best business in the world!</h2>
+
+            </div>
+
+            <div class="custom-shape-divider-bottom-1675105317">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        opacity=".25" class="shape-fill"></path>
+                    <path
+                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                        opacity=".5" class="shape-fill"></path>
+                    <path
+                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+
+        </section>
+    </header>
+
+    <main>
+        <div>
+
+
+        </div>
+
+        <section class="about-us">
+
+            <h1>First Scripts</h1>
+
+            <!-- Displays the time, day of week, and date -->
+            <h3 id="date"></h3>
+      
+            <!-- Prompts the user for their name and how they're feeling -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" />
+            <br />
+            <label for="mood">How are you feeling?</label>
+            <input type="text" id="mood" />
+            <br />
+            <button onclick="greetUser()">Submit</button>
+      
+            <!-- Greets the user by their name, mentions their mood -->
+            <p id="greeting"></p>
+      
+            <!-- Five different basic functions that your animal brand company could do -->
+            <button onclick="function1()">Function 1</button>
+            <button onclick="function2()">Function 2</button>
+            <button onclick="function3()">Function 3</button>
+            <button onclick="function4()">Function 4</button>
+            <button onclick="function5()">Function 5</button>
+      
+
+        </section>
+
+   
+
+
+    </main>
+
+    <footer>
+        Copyright @ Emerson Hicks 2023
+        <p>
+            <a
+                href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fehicks23%2Findex.html">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!">
+            </a>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fehicks23%2F">
+                <img style="border:0;width:88px;height:31px" src="../../images/html_validator.png" alt="Valid Html!">
+            </a>
+        </p>
+
+    </footer>
+
+
+    <script>
+        // Display the time, day of week, and date
+        const dateElement = document.getElementById("date");
+        const date = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        dateElement.textContent = `Today is ${date.toLocaleTimeString()} on ${date.toLocaleDateString(undefined, options)}`;
+  
+        // Greet the user by their name, mentions their mood
+        function greetUser() {
+          const name = document.getElementById("name").value;
+          const mood = document.getElementById("mood").value;
+          const greetingElement = document.getElementById("greeting");
+          greetingElement.textContent = `Emerson Enterprises welcomes you, ${name}! We're glad you are doing ${mood}!`;
+        }
+  
+        // Five different basic functions that your animal brand company could do
+        function function1() {
+          alert("hi")
+        }
+        
+         function function2() {
+            alert("my")
+         }
+         
+         function function3() {
+            alert("name")
+         }
+         
+         function function4() {
+            alert("is")
+         }
+         
+         function function5() {
+            alert("emerson")
+         }
+      </script>
+</body>
+
+
+</html>

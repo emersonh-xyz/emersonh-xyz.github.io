@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grimace</title>
+    <link rel="stylesheet" href="styles.css"><link>
+</head>
+<body>
+    <header>
+        <a class="hero-title">Welcome to my website!!</a>
+        <img class="rainbow" src="images/rainbow.png">
+        <img class="mcdonalds" src="images/mcdonalds.png">
+        <img class="grimace" src="images/grimace.png">
+        <img class="bigmac" src="images/bigmac.png">
+    </header>
+
+    <main>
+        <h1>TRY TO CATCH THE GRIMACE SHAKE</h1>
+        <div class="difficulty">
+            <h2>Select your difficulty</h2>
+            <button onclick="setDifficulty(event)" id="easy">Easy</button>
+            <button onclick="setDifficulty(event)" id="hard">Hard</button>
+            <button onclick="setDifficulty(event)" id="master">GRIMACE SHAKE</button>
+        </div>
+        <a id="score">Score: </a>
+        <img onclick="win()" id="grimaceShake" src="images/grimaceshake.png">
+
+        <container>
+            <img class="bigmac" src="images/bigmac.png">
+            <a class="container-title">Get the shake today!</a>
+            <button>Locations</button>
+            <button>Purcahse</button>
+            <button>Meet grimace</button>
+            <button>Donate</button>
+        </container>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
