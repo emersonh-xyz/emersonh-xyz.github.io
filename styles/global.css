@@ -95,3 +95,33 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
     background-color: white;
 }
+
+/* Align content to the left */
+.introduction {
+    text-align: left;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Style for headings */
+.introduction h2,
+.introduction h3 {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Style for paragraphs */
+.introduction p {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Style for unordered lists */
+.introduction ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
